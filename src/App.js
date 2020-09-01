@@ -1,15 +1,14 @@
 import React from 'react';
-import {Route, Router, Switch} from "react-router";
+import {Route, BrowserRouter, Switch} from "react-router-dom";
 import Home from "./components/Home";
 
 function App() {
   return (
-      //TODO co to jest history??
-      <Router>
+      <BrowserRouter>
         <Switch>
             <Route path={"/"} exact component={Home}/>
         </Switch>
-      </Router>
+      </BrowserRouter>
   );
 }
 

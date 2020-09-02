@@ -22,9 +22,9 @@ function HomeHeader() {
                     <Link to={"/"} className={"menuElement"}>Kontakt</Link>
                 </div>
                 <div className={"header"}>
-                    <p>
+                    <h1>
                         Zacznij pomagać!
-                    </p>
+                    </h1>
                     <p>
                         Oddaj niechciane rzeczy w zaufane ręce
                     </p>

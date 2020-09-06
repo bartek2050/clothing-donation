@@ -1,0 +1,38 @@
+.homeBeneficiary__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        font-size: 2.375em;
+        padding-top: 70px;
+    }
+
+    .homeBeneficiary__decoration {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .homeBeneficiary__navigation-element {
+        text-decoration: none;
+        font-size: 1.5em;
+        color: $main-font;
+        padding: 23px 42px;
+        border: 0.75px solid #fff;
+        font-weight: 300;
+    }
+
+    .homeBeneficiary__navigation-element:hover {
+        padding: 23px 42px;
+        border: 0.75px solid $main-font;
+    }
+
+    .homeBeneficiary__text {
+        padding: 70px 0;
+        font-size: 1.375em;
+        font-weight: 300;
+        width: 650px;
+        text-align: center;
+    }
+}

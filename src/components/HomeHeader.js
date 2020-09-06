@@ -3,6 +3,7 @@ import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import React from "react";
 
 
+
 function HomeHeader() {
     return (
         <section className={"home__section"}>

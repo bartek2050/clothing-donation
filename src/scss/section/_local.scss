@@ -1,0 +1,15 @@
+.aboutLocal__section {
+    @include aboutSection;
+}
+
+.aboutLocal__text-name {
+    @include aboutTextName;
+}
+
+.aboutLocal__text-info {
+    @include aboutTextInfo;
+}
+
+.aboutLocal__needs {
+    @include aboutNeeds;
+}

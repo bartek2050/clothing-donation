@@ -1,0 +1,27 @@
+@mixin aboutSection {
+    display: flex;
+    justify-content: space-between;
+    color: $main-font;
+    border-bottom: 1px solid #707070;
+    margin: 20px 180px;
+}
+
+@mixin aboutTextName {
+    font-size: 1.625em;
+    font-family: $font-alt;
+    font-weight: 300;
+    padding-bottom: 15px;
+}
+
+@mixin aboutTextInfo {
+    font-family: $font-alt;
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+@mixin aboutNeeds {
+    padding-top: 15px;
+    font-family: $font-alt;
+    font-weight: 300;
+    text-align: end;
+}

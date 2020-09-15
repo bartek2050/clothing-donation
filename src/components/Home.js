@@ -8,6 +8,7 @@ import Foundation from "./Foundation";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Ngo from "./Ngo";
 import Local from "./Local";
+import Contact from "./Contact";
 
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
                     <Route path={"/ngo"} component={Ngo}/>
                     <Route path={"/local"} component={Local}/>
                 </Switch>
+                <Contact/>
             </Router>
         </>
     )

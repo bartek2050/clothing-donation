@@ -1,6 +1,6 @@
 import React from "react";
 import {ReactComponent as Decoration} from "../assets/Decoration.svg";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 function HomeBeneficiary () {
@@ -11,9 +11,15 @@ function HomeBeneficiary () {
         </h3>
         <Decoration className={"homeBeneficiary__decoration"} />
         <div className={"homeBeneficiary__navigation"}>
-            <Link to={"/foundation"} className={"homeBeneficiary__navigation-element"}>Fundacjom</Link>
-            <Link to={"/ngo"} className={"homeBeneficiary__navigation-element"}>Organizacjom pozarządowym</Link>
-            <Link to={"/local"} className={"homeBeneficiary__navigation-element"}>Lokalnym zbiórkom</Link>
+            <NavLink to={"/foundation"} activeClassName={"homeBeneficiary__active"}
+                     className={"homeBeneficiary__navigation-element"}>Fundacjom
+            </NavLink>
+            <NavLink to={"/ngo"} activeClassName={"homeBeneficiary__active"}
+                     className={"homeBeneficiary__navigation-element"}>Organizacjom pozarządowym
+            </NavLink>
+            <NavLink to={"/local"} activeClassName={"homeBeneficiary__active"}
+                     className={"homeBeneficiary__navigation-element"}>Lokalnym zbiórkom
+            </NavLink>
         </div>
             <p className={"homeBeneficiary__text"}>
                 W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy.

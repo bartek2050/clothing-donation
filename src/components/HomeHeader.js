@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import React from "react";
-
+import {Link as ScrollLink} from "react-scroll"
 
 
 function HomeHeader() {
@@ -17,8 +17,24 @@ function HomeHeader() {
                 </div>
                 <div className={"home__mainSection-navigation"}>
                     <Link to={"/"} className={"menuElement"}>Start</Link>
-                    <Link to={"/"} className={"menuElement"}>O co chodzi</Link>
-                    <Link to={"/"} className={"menuElement"}>O nas</Link>
+                    <ScrollLink
+                        to={"fourSteps"}
+                        className={"menuElement"}
+                        spy={true}
+                        smooth={true}
+                        offset={20}
+                        duration={500}>
+                        O co chodzi
+                    </ScrollLink>
+                    <ScrollLink
+                        to={"aboutUs"}
+                        className={"menuElement"}
+                        spy={true}
+                        smooth={true}
+                        offset={20}
+                        duration={500}>
+                        O nas
+                    </ScrollLink>
                     <Link to={"/"} className={"menuElement"}>Fundacja i organizacje</Link>
                     <Link to={"/"} className={"menuElement"}>Kontakt</Link>
                 </div>

@@ -35,8 +35,24 @@ function HomeHeader() {
                         duration={500}>
                         O nas
                     </ScrollLink>
-                    <Link to={"/"} className={"menuElement"}>Fundacja i organizacje</Link>
-                    <Link to={"/"} className={"menuElement"}>Kontakt</Link>
+                    <ScrollLink
+                        to={"beneficiary"}
+                        className={"menuElement"}
+                        spy={true}
+                        smooth={true}
+                        offset={20}
+                        duration={500}>
+                        Fundacja i organizacje
+                    </ScrollLink>
+                    <ScrollLink
+                        to={"contact"}
+                        className={"menuElement"}
+                        spy={true}
+                        smooth={true}
+                        offset={20}
+                        duration={500}>
+                        Kontakt
+                    </ScrollLink>
                 </div>
                 <div className={"header"}>
                     <h1>

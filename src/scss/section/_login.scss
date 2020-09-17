@@ -1,0 +1,42 @@
+.loginSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .loginHeader {
+        color: $main-font;
+        font-size: 2em;
+        margin-top: 100px;
+    }
+
+    .loginDecoration {
+        position: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .login__formSection-credentials {
+        background-color: $background-color;
+        width: 350px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+
+            input {
+                background-color: $background-color;
+                width: 200px;
+                border: none;
+                border-bottom: 1px solid #707070;
+                border-radius: 0;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}

@@ -6,8 +6,6 @@ import HomeAboutUs from "./HomeAboutUs";
 import HomeBeneficiary from "./HomeBeneficiary";
 import {BrowserRouter as Router} from "react-router-dom";
 import HomeContact from "./HomeContact";
-import Login from "./Login";
-
 
 function Home() {
     return (
@@ -19,7 +17,6 @@ function Home() {
                 <HomeAboutUs/>
                 <HomeBeneficiary/>
                 <HomeContact/>
-                <Login/>
             </Router>
         </>
     )

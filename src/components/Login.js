@@ -1,16 +1,20 @@
 import React, {useState} from "react";
 import Decoration from "../assets/Decoration.svg"
+import Navigation from "./Navigation";
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     return (
-        <section>
-            <h2>Zaloguj się</h2>
-            <img alt={"decoration"} src={Decoration}/>
+        <>
+        <Navigation/>
+        <section className={"loginSection"}>
+            <h2 className={"loginHeader"}>Zaloguj się</h2>
+            <img className={"loginDecoration"} alt={"decoration"} src={Decoration}/>
             <div className={"loginBox"}>
-                <form>
+                <form className={"login__formSection"}>
+                    <div className={"login__formSection-credentials"}>
                     <label>
                         Email
                         <input
@@ -27,11 +31,15 @@ function Login() {
                             value={password}
                             onChange={event => setPassword(event.target.value)}/>
                     </label>
+                    </div>
+                    <div className={"login__formSection-buttons"}>
                     <input type="submit" value="Załóż konto"/>
                     <input type="submit" value="Zaloguj się"/>
+                    </div>
                 </form>
             </div>
         </section>
+            </>
     )
 }
 

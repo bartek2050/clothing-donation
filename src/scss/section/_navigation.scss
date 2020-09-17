@@ -1,0 +1,46 @@
+.navigationMain {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    margin-right: 25px;
+
+    .navigationMain__login {
+        display: flex;
+        text-decoration: none;
+        font-size: 0.875em;
+        justify-content: flex-end;
+
+        .login {
+            text-decoration: none;
+            padding: 10px 25px;
+            color: $login-font;
+        }
+
+        .register {
+            text-decoration: none;
+            color: $login-font;
+            border: 0.75px solid $gold-element;
+            padding: 10px;
+        }
+    }
+
+    .navigationMain__navigation {
+        margin-top: 15px;
+        display: flex;
+        justify-content: flex-end;
+
+        .menuElement {
+            text-decoration: none;
+            color: $main-font;
+            font-size: 1.125em;
+            border: 0.75px solid transparent;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .menuElement:hover {
+            border: 0.75px solid $main-font;
+            padding: 10px;
+        }
+    }
+}

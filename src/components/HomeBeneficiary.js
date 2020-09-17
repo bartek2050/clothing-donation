@@ -27,9 +27,9 @@ function HomeBeneficiary() {
                 W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy.
                 Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.
             </p>
-            { section === 0 && <Foundation />}
-            {section === 1 && <Ngo />}
-            {section === 2 && <Local />}
+            { section === 0 && <Foundation /> }
+            { section === 1 && <Ngo /> }
+            { section === 2 && <Local /> }
         </section>
     )
 }

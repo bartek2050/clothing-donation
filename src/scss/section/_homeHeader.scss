@@ -8,58 +8,16 @@
     }
 }
 
-.home__mainSection {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    margin-right: 25px;
-    width: 50vw;
-
-    .home__mainSection-login {
-        display: flex;
-        text-decoration: none;
-        font-size: 0.875em;
-        justify-content: flex-end;
-
-        .login {
-            text-decoration: none;
-            padding: 10px 25px;
-            color: $login-font;
-        }
-
-        .register {
-            text-decoration: none;
-            color: $login-font;
-            border: 0.75px solid $gold-element;
-            padding: 10px;
-        }
-    }
-
-    .home__mainSection-navigation {
-        margin-top: 15px;
-        display: flex;
-        justify-content: flex-end;
-
-        .menuElement {
-            text-decoration: none;
-            color: $main-font;
-            font-size: 1.125em;
-            border: 0.75px solid transparent;
-            padding: 10px;
-            cursor: pointer;
-        }
-        .menuElement:hover {
-            border: 0.75px solid $main-font;
-            padding: 10px;
-        }
-    ;
-    }
+.home__section-about {
     .header {
+        display: flex;
+        flex-direction: column;
         margin-top: 120px;
         text-align: center;
         font-size: 2.375em;
         font-weight: 300;
     }
+
     .decoration {
         text-align: center;
         margin-top: 25px;
@@ -69,15 +27,5 @@
     .cta__mainSection {
         display: flex;
         justify-content: center;
-
-        .cta__button {
-            color: $main-font;
-            width: 75px;
-            text-align: center;
-            padding: 15px 50px;
-            text-decoration: none;
-            border: 0.75px solid $main-font;
-            margin: 0 20px;
-        }
     }
 }

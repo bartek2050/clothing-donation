@@ -15,21 +15,29 @@
     }
 
     .homeBeneficiary__navigation-element {
-        text-decoration: none;
-        font-size: 1.5em;
-        color: $main-font;
-        padding: 23px 42px;
-        border: 0.75px solid #fff;
+        background: #fff;
+        box-sizing: border-box;
+        font-family: $font-base;
         font-weight: 300;
+        font-size: 1.5rem;
+        padding: 13px;
+        margin: 11px 7px;
+        cursor: pointer;
+        border: 0.75px solid transparent;
+
+        &:hover {
+            border: 0.75px solid $main-font;
+        }
+
+        &:focus {
+            outline: none;
+            border: 0.75px solid $main-font;
+        }
     }
 
-    .homeBeneficiary__navigation-element:hover {
-        padding: 23px 42px;
-        border: 0.75px solid $main-font;
-    }
 
-    .homeBeneficiary__active {
-        padding: 23px 42px;
+
+    .homeBeneficiary__navigation-element:active {
         border: 0.75px solid $main-font;
     }
 

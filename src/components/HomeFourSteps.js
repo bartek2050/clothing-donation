@@ -5,6 +5,7 @@ import Shirt from "../assets/Icon-1.svg"
 import Bag from "../assets/Icon-2.svg"
 import Loupe from "../assets/Icon-3.svg"
 import Loop from "../assets/Icon-4.svg"
+import Button from "./elements/Button";
 
 
 
@@ -45,7 +46,9 @@ function HomeFourSteps() {
                 </div>
             </div>
             <div className={"fourSteps__button"}>
-                <Link to={"/logowanie"} className={"fourSteps__button-cta"}>ODDAJ RZECZY</Link>
+                <Link to={"/logowanie"} className={"fourSteps__button-cta"}>
+                    <Button text={`ODDAJ RZECZY`}/>
+                </Link>
             </div>
         </section>
     )

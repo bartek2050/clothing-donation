@@ -1,0 +1,31 @@
+.threeColumns__section {
+    background-image: url("../../assets/3-Columns-Background.png");
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.threeColumns__box {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: center;
+    width: 300px;
+
+    .threeColumns__number {
+        font-size: 5.625em;
+        color: $numbers-color;
+        font-weight: 300;
+        font-family: $main-font;
+    }
+    .threeColumns__tag {
+        font-size: 1.125em;
+        color: $main-font;
+        padding: 20px 0;
+    }
+
+    .threeColumns__text {
+        color: $main-font;
+        font-weight: 300;
+        text-align: center;
+    }
+}

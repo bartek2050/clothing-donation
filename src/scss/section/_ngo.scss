@@ -1,0 +1,15 @@
+.aboutNgo__section {
+    @include aboutSection;
+}
+
+.aboutNgo__text-name {
+    @include aboutTextName;
+}
+
+.aboutNgo__text-info {
+    @include aboutTextInfo;
+}
+
+.aboutNgo__needs {
+    @include aboutNeeds;
+}

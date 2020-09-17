@@ -1,0 +1,15 @@
+.aboutFoundation__section {
+    @include aboutSection;
+}
+
+.aboutFoundation__text-name {
+    @include aboutTextName;
+}
+
+.aboutFoundation__text-info {
+    @include aboutTextInfo;
+}
+
+.aboutFoundation__needs {
+    @include aboutNeeds;
+}

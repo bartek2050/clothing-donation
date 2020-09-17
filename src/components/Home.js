@@ -1,13 +1,24 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import HomeHeader from "./HomeHeader";
+import HomeThreeColumns from "./HomeThreeColumns";
+import HomeFourSteps from "./HomeFourSteps";
+import HomeAboutUs from "./HomeAboutUs";
+import HomeBeneficiary from "./HomeBeneficiary";
+import {BrowserRouter as Router} from "react-router-dom";
+import HomeContact from "./HomeContact";
 
 function Home() {
     return (
-        <header className={"header"}>
-            <div className={"header__box"}>
-                <Link to={"/"} className={"logo"}>LOGO</Link>
-            </div>
-        </header>
+        <>
+            <Router>
+                <HomeHeader/>
+                <HomeThreeColumns/>
+                <HomeFourSteps/>
+                <HomeAboutUs/>
+                <HomeBeneficiary/>
+                <HomeContact/>
+            </Router>
+        </>
     )
 }
 

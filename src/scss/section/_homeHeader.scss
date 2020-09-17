@@ -1,0 +1,31 @@
+.home__section {
+    display: flex;
+}
+
+.home__image {
+    img {
+        width: 50vw;
+    }
+}
+
+.home__section-about {
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        text-align: center;
+        font-size: 2.375em;
+        font-weight: 300;
+    }
+
+    .decoration {
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 55px;
+    }
+
+    .cta__mainSection {
+        display: flex;
+        justify-content: center;
+    }
+}

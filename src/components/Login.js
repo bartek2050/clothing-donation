@@ -1,6 +1,6 @@
 import React, {useState} from "react";
-import Decoration from "../assets/Decoration.svg"
 import Navigation from "./Navigation";
+import Decoration from "./elements/Decoration";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -10,8 +10,7 @@ function Login() {
         <>
             <Navigation/>
             <section className={"loginSection"}>
-                <h2 className={"loginHeader"}>Zaloguj się</h2>
-                <img className={"loginDecoration"} alt={"decoration"} src={Decoration}/>
+                <Decoration header={`Zaloguj się`}/>
                 <div className={"loginBox"}>
                     <form className={"login__formSection"}>
                         <div className={"login__formSection-credentials"}>

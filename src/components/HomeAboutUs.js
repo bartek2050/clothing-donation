@@ -1,13 +1,12 @@
 import React from "react";
-import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import Signature from "../assets/Signature.svg";
+import Decoration from "./elements/Decoration";
 
 function HomeAboutUs () {
     return (
         <section id={"aboutUs"} className={"aboutUs__section"}>
             <div className={"aboutUs__text"}>
-                <h3>O nas</h3>
-                <Decoration className={"aboutUs__text-decoration"}/>
+               <Decoration header={`O nas`}/>
                 <p>
                     Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery.
                     Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.

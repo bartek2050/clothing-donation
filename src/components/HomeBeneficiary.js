@@ -1,16 +1,15 @@
 import React, {useState} from "react";
-import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import Foundation from "./Beneficiary/Foundation";
 import Ngo from "./Beneficiary/Ngo";
 import Local from "./Beneficiary/Local";
+import Decoration from "./elements/Decoration";
 
 function HomeBeneficiary() {
     const [section, setSection] = useState(0);
 
     return (
         <section id={"beneficiary"} className={"homeBeneficiary__section"}>
-            <h3>Komu pomagamy</h3>
-            <Decoration className={"homeBeneficiary__decoration"}/>
+            <Decoration header={`Komu pomagamy`}/>
             <div className={"homeBeneficiary__navigation"}>
                 <button onClick={() => setSection(0)} activeClassName={"homeBeneficiary__active"}
                         className={"homeBeneficiary__navigation-element"}>Fundacjom

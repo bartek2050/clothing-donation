@@ -2,59 +2,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 80px;
 
-    .loginHeader {
-        color: $main-font;
-        font-size: 2em;
-        margin-top: 100px;
-    }
+    .loginBox {
+        margin-top: 50px;
 
-    .loginDecoration {
-        position: center;
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
-
-    .login__formSection-credentials {
-        background-color: $background-color;
-        width: 350px;
-        height: 230px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        label {
+        .login__formSection-credentials {
+            background-color: $background-color;
+            width: 350px;
+            height: 230px;
             display: flex;
             flex-direction: column;
-            padding: 20px 0;
+            justify-content: center;
+            align-items: center;
 
-            input {
-                background-color: $background-color;
-                width: 200px;
-                border: none;
-                border-bottom: 1px solid #707070;
-                border-radius: 0;
-                padding-bottom: 10px;
+            label {
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+
+                input {
+                    background-color: $background-color;
+                    width: 200px;
+                    border: none;
+                    border-bottom: 1px solid #707070;
+                    border-radius: 0;
+                    padding-bottom: 10px;
+                }
             }
         }
-    }
 
-    .login__formSection-buttons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
+        .login__formSection-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
 
-        input {
-            font-weight: 300;
-            background-color: #fff;
-            background: 0 0;
-            padding: 13px;
-            border: 0.75px solid transparent;
-            text-decoration: none;
+            input {
+                font-weight: 300;
+                background-color: #fff;
+                background: 0 0;
+                padding: 13px;
+                border: 0.75px solid transparent;
+                text-decoration: none;
 
-            &:hover {
-                border: 0.75px solid $main-font;
+                &:hover {
+                    border: 0.75px solid $main-font;
+                }
             }
         }
     }

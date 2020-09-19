@@ -39,4 +39,23 @@
             }
         }
     }
+
+    .login__formSection-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            font-weight: 300;
+            background-color: #fff;
+            background: 0 0;
+            padding: 13px;
+            border: 0.75px solid transparent;
+            text-decoration: none;
+
+            &:hover {
+                border: 0.75px solid $main-font;
+            }
+        }
+    }
 }

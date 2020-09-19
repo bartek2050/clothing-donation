@@ -1,24 +1,20 @@
 import React from "react";
-import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import {Link} from "react-router-dom";
 import Shirt from "../assets/Icon-1.svg"
 import Bag from "../assets/Icon-2.svg"
 import Loupe from "../assets/Icon-3.svg"
 import Loop from "../assets/Icon-4.svg"
 import Button from "./elements/Button";
+import Decoration from "./elements/Decoration";
 
 
 
 function HomeFourSteps() {
     return (
         <section id={"fourSteps"}>
-            <h2 className={"fourSteps__header"}>
-                Wystarczą 4 proste kroki
-            </h2>
             <div className={"fourSteps__decoration"}>
-                <Decoration/>
+               <Decoration header={`Wystarczą 4 proste kroki`}/>
             </div>
-
             <div className={"fourSteps__section"}>
                 <div className={"fourSteps__box"}>
                     <img className={"fourSteps__icon"} alt={"shirt"}  src={Shirt}/>

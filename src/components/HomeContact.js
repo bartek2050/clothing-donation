@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import {ReactComponent as Decoration} from "../assets/Decoration.svg";
 import Instagram from "../assets/Instagram.svg"
 import Facebook from "../assets/Facebook.svg"
+import Decoration from "./elements/Decoration";
 
 function HomeContact() {
     const [name, setName] = useState("");
@@ -10,12 +10,15 @@ function HomeContact() {
 
     return (
         <>
-            <section style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/Background-Contact-Form.jpg'}`}}  id={"contact"} className={"contact__section"}>
+            <section
+                style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/Background-Contact-Form.jpg'}`}}
+                id={"contact"}
+                className={"contact__section"}>
+
                 <div className={"contact__section-picture"}>
                 </div>
                 <div className={"contact__section-form"}>
-                    <h3>Skontaktuj się z nami</h3>
-                    <Decoration className={"contact__section-decoration"}/>
+                   <Decoration header={`Skontaktuj się z nami`}/>
                     <form>
                         <label>
                             Wpisz swoje imię

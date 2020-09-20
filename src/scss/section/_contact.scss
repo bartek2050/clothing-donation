@@ -1,14 +1,99 @@
 .contact__section {
     display: flex;
+    flex-direction: column;
 
-    .contact__section-form {
+    .contact__section-main {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        flex-direction: column;
+        margin-left: calc(100vw * 0.6);
+        margin-top: 150px;
 
         h3 {
             padding: 20px 0;
         }
+
+        .contact__section-form {
+            display: flex;
+            flex-direction: column;
+
+            .contact__section-name {
+                display: flex;
+                margin-top: 30px;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 15px 20px 0;
+                }
+
+                input {
+                    width: 150px;
+                    border: none;
+                    border-radius: 0;
+                    background: transparent;
+                    border-bottom: 0.75px solid $main-font;
+                    margin-top: 15px;
+                    font-family: $font-base;
+                    font-size: 0.8em;
+                }
+            }
+
+            .contact__section-textarea {
+                display: flex;
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+
+                    textarea {
+                        background: transparent;
+                        border: none;
+                        font-family: $font-base;
+                        font-size: 0.8em;
+                        width: 100%;
+                        margin-top: 15px;
+                        border-bottom: 0.75px solid $main-font;
+                        border-radius: 0;
+                    }
+                }
+            }
+
+            .contact__section-btn {
+                background: 0 0;
+                align-self: flex-end;
+                border: 0.75px solid $main-font;
+                border-radius: 0;
+                padding: 13px 26px;
+                margin-right: 13px;
+                font-family: $font-base;
+                font-size: 1em;
+                font-weight: 300;
+                margin-top: 40px;
+                cursor: pointer;
+            }
+        }
     }
 
+
+}
+
+.contact__section-footer {
+
+    .contact__section-copyrights {
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .contact__sections-socials {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+
+        img {
+            padding-left: 10px;
+            margin-right: 25px;
+        }
+    }
 }

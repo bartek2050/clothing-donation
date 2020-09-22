@@ -12,13 +12,13 @@ function HomeContact() {
         <>
             <section
                 style={{
-                    backgroundImage: `url(${process.env.PUBLIC_URL + '/Background-Contact-Form.jpg'}`,
+                    background: `red url(${process.env.PUBLIC_URL + '/Background-Contact-Form.jpg'}`,
                     backgroundPosition: "top",
                     backgroundSize: "cover",
-                    opacity: 0.7,
                 }}
                 id={"contact"}
                 className={"contact__section"}>
+                <div className={"contact__section-container"}>
                 <div className={"contact__section-main"}>
                     <Decoration header={`Skontaktuj się z nami`}/>
                     <form className={"contact__section-form"}>
@@ -69,6 +69,7 @@ function HomeContact() {
                         <img alt={"instagram logo"} src={Instagram}/>
                     </div>
                 </footer>
+                </div>
             </section>
 
         </>

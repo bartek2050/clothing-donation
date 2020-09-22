@@ -13,7 +13,10 @@ function HomeHeader() {
 
                 <div className={"homeSection__about"}>
                     <div className={"homeSection__navigation"}><Navigation/></div>
-                    <Decoration header={`Zacznij pomagać! Oddaj niechciane rzeczy w zaufane ręce`}/>
+                    <Decoration>
+                        <h3 className={"decorHeader"}>Zacznij pomagać!<br/>
+                            Oddaj niechciane rzeczy w zaufane ręce</h3>
+                        </Decoration>
                     <div className={"cta__mainSection"}>
                         <Link to={"/logowanie"} className={"cta__button"}>
                             <Button text={`ODDAJ RZECZY`}/>

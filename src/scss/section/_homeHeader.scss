@@ -1,19 +1,29 @@
 .homeSection {
     display: flex;
-}
+    height: 95vh;
+    width: 100%;
 
-.homeSection__image {
-    img {
-        width: 50vw;
+    .homeSection__image {
+        height: 100%;
+        width: 40%;
     }
-}
 
-.homeSection__navigation {
-    margin-bottom: 40px;
-}
+    .homeSection__about {
+        height: 100%;
+        width: 55%;
+    }
+
+    .homeSection__navigation {
+        margin-bottom: 230px;
+    }
 
     .cta__mainSection {
         display: flex;
         justify-content: center;
         margin-top: 40px;
+
+        .cta__button {
+            margin-left: 15px;
+        }
     }
+}

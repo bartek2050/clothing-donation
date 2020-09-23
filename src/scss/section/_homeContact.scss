@@ -81,6 +81,21 @@
                 margin-top: 40px;
                 cursor: pointer;
             }
+
+            .errorMessage {
+                font-size: 0.8em;
+                font-weight: 600;
+                color: #ab1c1c;
+                padding-top: 5px;
+            }
+
+            .successMessage {
+                text-align: center;
+                font-size: 0.8em;
+                font-weight: 600;
+                color: #34a71a;
+                padding-top: 20px;
+            }
         }
     }
 
@@ -88,20 +103,33 @@
 }
 
 .contact__section-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 100px;
+
+    .contact__section-empty {
+        width: calc(100% / 3);
+    }
 
     .contact__section-copyrights {
+        width: calc(100% / 3);
         text-align: center;
-        padding-top: 100px;
+        font-weight: 300;
     }
 
     .contact__sections-socials {
         display: flex;
         justify-content: flex-end;
-        padding-bottom: 10px;
+        padding-right: 100px;
+        width: calc(100% / 3);
 
         img {
-            padding-left: 10px;
-            margin-right: 25px;
+            display: flex;
+            cursor: pointer;
+            justify-content: flex-end;
+            padding-left: 20px;
+
         }
     }
 }

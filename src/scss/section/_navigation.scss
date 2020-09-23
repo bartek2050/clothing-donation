@@ -32,10 +32,12 @@
         .menuElement {
             text-decoration: none;
             color: $main-font;
-            font-size: 1em;
+            font-size: 1.125em;
+            font-weight: 300;
             border: 0.75px solid transparent;
             padding: 10px;
             cursor: pointer;
+            margin-left: 35px;
         }
 
         .menuElement:hover {

@@ -10,7 +10,7 @@ function Navigation () {
             <Link to={"/logowanie"} className={"login"}>Zaloguj</Link>
             <Link to={"/rejestracja"} className={"register"}>Załóż konto</Link>
         </div>
-        <navigation className={"navigationMain__navigation"}>
+        <div className={"navigationMain__navigation"}>
             <Link to={"/"} className={"menuElement"}>Start</Link>
             <ScrollLink
                 to={"fourSteps"}
@@ -48,7 +48,7 @@ function Navigation () {
                 duration={500}>
                 Kontakt
             </ScrollLink>
-        </navigation>
+        </div>
     </section>
     )
 }

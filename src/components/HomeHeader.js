@@ -7,10 +7,14 @@ import Decoration from "./elements/Decoration";
 function HomeHeader() {
     return (
             <section className={"homeSection"}>
-                <div className={"homeSection__image"}>
-                    <img alt={"homeImage"} src={process.env.PUBLIC_URL + '/Home-Hero-Image.jpg'}/>
-                </div>
-
+                <div className={"homeSection__image"}
+                     style={{
+                         backgroundImage: `url(${process.env.PUBLIC_URL + '/Home-Hero-Image.jpg'}`,
+                         backgroundPosition: "-300px",
+                         backgroundSize: "cover",
+                         backgroundRepeat: "no-repeat",
+                     }}
+                />
                 <div className={"homeSection__about"}>
                     <div className={"homeSection__navigation"}><Navigation/></div>
                     <Decoration>

@@ -11,14 +11,14 @@ function HomeBeneficiary() {
         <section id={"beneficiary"} className={"homeBeneficiary__section"}>
             <Decoration header={`Komu pomagamy`}/>
             <div className={"homeBeneficiary__navigation"}>
-                <button onClick={() => setSection(0)} activeClassName={"homeBeneficiary__active"}
+                <button onClick={() => setSection(0)} activeclassname={"homeBeneficiary__active"}
                         className={"homeBeneficiary__navigation-element"}>Fundacjom
                 </button>
 
-                <button onClick={() => setSection(1)} activeClassName={"homeBeneficiary__active"}
+                <button onClick={() => setSection(1)} activeclassname={"homeBeneficiary__active"}
                         className={"homeBeneficiary__navigation-element"}>Organizacjom pozarządowym
                 </button>
-                <button onClick={() => setSection(2)} activeClassName={"homeBeneficiary__active"}
+                <button onClick={() => setSection(2)} activeclassname={"homeBeneficiary__active"}
                         className={"homeBeneficiary__navigation-element"}>Lokalnym zbiórkom
                 </button>
             </div>

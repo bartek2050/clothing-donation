@@ -4,8 +4,8 @@ import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
 
-function Login() {
-    const {register, handleSubmit, errors, formState} = useForm();
+function Register() {
+    const {register, handleSubmit, errors, formState, watch} = useForm();
 
     const onSubmit = data => {
         console.log(data)
@@ -14,11 +14,11 @@ function Login() {
     return (
         <>
             <Navigation/>
-            <section className={"loginSection"}>
-                <Decoration header={`Zaloguj się`}/>
-                <div className={"loginBox"}>
-                    <form className={"login__formSection"} onSubmit={handleSubmit(onSubmit)} >
-                        <div className={"login__formSection-credentials"}>
+            <section className={"registerSection"}>
+                <Decoration header={`Załóż konto`}/>
+                <div className={"registerBox"}>
+                    <form className={"register__formSection"} onSubmit={handleSubmit(onSubmit)} >
+                        <div className={"register__formSection-credentials"}>
                             <label>
                                 Email
                                 <input
@@ -43,16 +43,37 @@ function Login() {
                                         required: {value: true, message: "Hasło jest wymagane"},
                                         minLength: {value: 6, message: "Podane hasło jest za krótkie"}
                                     })}
-                                    />
+                                />
                                 {errors.password &&
                                 <span className={"errorMessage"}>{errors.password.message}</span>}
                             </label>
+                            <label>
+                                Powtórz Hasło
+                                <input
+                                    name="passwordRepeat"
+                                    type="password"
+                                    ref={register({
+                                        required: {value: true, message: "Hasło jest wymagane"},
+                                        minLength: {value: 6, message: "Podane hasło jest za krótkie"},
+                                        validate: value => {
+                                            if (value === watch("password")) {
+                                                return true;
+                                            } else {
+                                                alert("Hasło nie pasuje");
+                                            }
+                                                }
+
+                                    })}
+                                />
+                                {errors.password &&
+                                <span className={"errorMessage"}>{errors.passwordRepeat.message}</span> }
+                            </label>
                         </div>
-                        <div className={"login__formSection-buttons"}>
-                            <Link to={"/rejestracja"} className={"login__formSection-button"}>Załóż konto</Link>
-                            <button className={"login__formSection-button"}
-                                type="submit">
-                                {formState.isSubmitting ? "" : "Zaloguj"}
+                        <div className={"register__formSection-buttons"}>
+                            <Link to={"/logowanie"} className={"register__formSection-button"}>Zaloguj</Link>
+                            <button className={"register__formSection-button"}
+                                    type="submit">
+                                {formState.isSubmitting ? "" : "Załóż konto"}
                             </button>
                         </div>
                     </form>
@@ -62,4 +83,4 @@ function Login() {
     )
 }
 
-export default Login;
+export default Register;

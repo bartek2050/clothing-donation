@@ -1,16 +1,17 @@
-.loginSection {
+.registerSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 80px;
 
-    .loginBox {
+    .registerBox {
         margin-top: 50px;
 
-        .login__formSection-credentials {
+        .register__formSection-credentials {
+            font-family: $font-base;
             background-color: $background-color;
             width: 350px;
-            height: 230px;
+            height: 330px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -36,12 +37,12 @@
             }
         }
 
-        .login__formSection-buttons {
+        .register__formSection-buttons {
             margin-top: 20px;
             display: flex;
             justify-content: space-between;
 
-            .login__formSection-button {
+            .register__formSection-button {
                 font-family: $font-base;
                 font-size: 1em;
                 cursor: pointer;

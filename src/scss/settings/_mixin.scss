@@ -25,3 +25,10 @@
     font-weight: 300;
     text-align: end;
 }
+
+@mixin Message($color)  {
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-top: 5px;
+    color: $color;
+}

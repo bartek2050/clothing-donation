@@ -83,22 +83,16 @@
             }
 
             .errorMessage {
-                font-size: 0.8em;
-                font-weight: 600;
-                color: #ab1c1c;
-                padding-top: 5px;
+                @include Message($error)
             }
 
             .successMessage {
-                text-align: center;
-                font-size: 0.8em;
-                font-weight: 600;
-                color: #34a71a;
+               @include Message($success);
                 padding-top: 20px;
+                text-align: center;
             }
         }
     }
-
 
 }
 

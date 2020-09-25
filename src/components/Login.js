@@ -50,7 +50,7 @@ function Login() {
                         </div>
                         <div className={"login__formSection-buttons"}>
                             <Link to={"/rejestracja"} className={"login__formSection-button"}>Załóż konto</Link>
-                            <button className={"login__formSection-button"}
+                            <button className={"login__formSection-buttonLogin"}
                                 type="submit">
                                 {formState.isSubmitting ? "" : "Zaloguj"}
                             </button>

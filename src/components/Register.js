@@ -71,7 +71,7 @@ function Register() {
                         </div>
                         <div className={"register__formSection-buttons"}>
                             <Link to={"/logowanie"} className={"register__formSection-button"}>Zaloguj</Link>
-                            <button className={"register__formSection-button"}
+                            <button className={"register__formSection-buttonRegister"}
                                     type="submit">
                                 {formState.isSubmitting ? "" : "Załóż konto"}
                             </button>

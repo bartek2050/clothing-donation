@@ -1,0 +1,25 @@
+.logoutSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+    .logoutSection__button {
+        font-family: $font-base;
+        font-size: 1em;
+        cursor: pointer;
+        font-weight: 300;
+        background-color: #fff;
+        background: 0 0;
+        padding: 13px;
+        border: 0.75px solid $main-font;
+        text-decoration: none;
+        color: $main-font;
+        margin-top: 30px;
+
+        &:hover {
+            border: 0.75px solid $main-font;
+        }
+    }
+}

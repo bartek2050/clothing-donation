@@ -32,3 +32,16 @@
     padding-top: 5px;
     color: $color;
 }
+
+@mixin button {
+    font-family: $font-base;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 300;
+    background-color: #fff;
+    background: 0 0;
+    padding: 13px;
+    border: 0.75px solid transparent;
+    text-decoration: none;
+    color: $main-font;
+}

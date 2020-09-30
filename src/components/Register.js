@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navigation from "./Navigation";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
@@ -6,6 +6,7 @@ import {Link} from "react-router-dom";
 
 function Register() {
     const {register, handleSubmit, errors, formState, watch} = useForm();
+    const [matchPass, setMatchPass] = useState("");
 
     const onSubmit = data => {
         console.log(data)
@@ -17,7 +18,7 @@ function Register() {
             <section className={"registerSection"}>
                 <Decoration header={`Załóż konto`}/>
                 <div className={"registerBox"}>
-                    <form className={"register__formSection"} onSubmit={handleSubmit(onSubmit)} >
+                    <form className={"register__formSection"} onSubmit={handleSubmit(onSubmit)}>
                         <div className={"register__formSection-credentials"}>
                             <label>
                                 Email
@@ -59,14 +60,14 @@ function Register() {
                                             if (value === watch("password")) {
                                                 return true;
                                             } else {
-                                                alert("Hasło nie pasuje");
+                                                setMatchPass(prevState => "Hasło nie pasuje");
                                             }
-                                                }
-
+                                        }
                                     })}
                                 />
+                                <span className={"errorMessage"}>{matchPass}</span>
                                 {errors.password &&
-                                <span className={"errorMessage"}>{errors.passwordRepeat.message}</span> }
+                                <span className={"errorMessage"}>{errors.passwordRepeat.message}</span>}
                             </label>
                         </div>
                         <div className={"register__formSection-buttons"}>

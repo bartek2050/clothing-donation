@@ -51,7 +51,7 @@ function HomeContact() {
                                 <label>
                                     Wpisz swoje imię
                                     <input
-                                        name={"userName"}
+                                        name={"name"}
                                         ref={register({
                                             required: {value: true, message: "Imie jest wymagane"},
                                             minLength: {value: 3, message: "Imie jest za krótkie"},
@@ -59,8 +59,8 @@ function HomeContact() {
                                         })
                                         }
                                         placeholder={"Krzysztof"}/>
-                                    {errors.userName &&
-                                    <span className={"errorMessage"}>{errors.userName.message}</span>}
+                                    {errors.name &&
+                                    <span className={"errorMessage"}>{errors.name.message}</span>}
                                 </label>
                                 <label>
                                     Wpisz swój email
@@ -81,7 +81,7 @@ function HomeContact() {
                                 <label>
                                     Wpisz swoją wiadomość
                                     <textarea
-                                        name={"textarea"}
+                                        name={"message"}
                                         ref={register({
                                             required: {
                                                 value: true,
@@ -102,7 +102,7 @@ function HomeContact() {
                                         "ut aliquip ex ea commodo consequat."}
                                     />
                                     {errors.textarea &&
-                                    <span className={"errorMessage"}>{errors.textarea.message}</span>}
+                                    <span className={"errorMessage"}>{errors.message.message}</span>}
                                 </label>
                             </div>
                             <button className={"contact__section-btn"} type="submit"

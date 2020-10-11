@@ -81,7 +81,7 @@ function HomeContact() {
                                 <label>
                                     Wpisz swoją wiadomość
                                     <textarea
-                                        name={"message"}
+                                        name={"textarea"}
                                         ref={register({
                                             required: {
                                                 value: true,
@@ -102,7 +102,7 @@ function HomeContact() {
                                         "ut aliquip ex ea commodo consequat."}
                                     />
                                     {errors.textarea &&
-                                    <span className={"errorMessage"}>{errors.message.message}</span>}
+                                    <span className={"errorMessage"}>{errors.textarea.message}</span>}
                                 </label>
                             </div>
                             <button className={"contact__section-btn"} type="submit"

@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link as RouteLink} from "react-router-dom";
 import {Link as ScrollLink} from "react-scroll";
 import React from "react";
 
@@ -7,11 +7,11 @@ function Navigation () {
     return (
     <section className={"navigationMain"}>
         <div className={"navigationMain__login"}>
-            <Link to={"/logowanie"} className={"login"}>Zaloguj</Link>
-            <Link to={"/rejestracja"} className={"register"}>Załóż konto</Link>
+            <RouteLink to={"/logowanie"} className={"login"}>Zaloguj</RouteLink>
+            <RouteLink to={"/rejestracja"} className={"register"}>Załóż konto</RouteLink>
         </div>
         <div className={"navigationMain__navigation"}>
-            <Link to={"/"} className={"menuElement"}>Start</Link>
+            <RouteLink to={"/"} className={"menuElement"}>Start</RouteLink>
             <ScrollLink
                 to={"fourSteps"}
                 className={"menuElement"}

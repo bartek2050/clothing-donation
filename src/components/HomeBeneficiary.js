@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import Foundation from "./Beneficiary/Foundation";
-import Ngo from "./Beneficiary/Ngo";
-import Local from "./Beneficiary/Local";
+import Foundation from "./beneficiary/Foundation";
+import Ngo from "./beneficiary/Ngo";
+import Local from "./beneficiary/Local";
 import Decoration from "./elements/Decoration";
 
 function HomeBeneficiary() {

@@ -1,14 +1,33 @@
-import React from "react";
+import React, {useCallback, useContext} from "react";
 import Navigation from "./Navigation";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom";
+import {Link, Redirect} from "react-router-dom";
+import app from "./firebase/Firebase";
+import {AuthContext} from "./firebase/Auth";
 
-function Login() {
+function Login({history}) {
     const {register, handleSubmit, errors, formState} = useForm();
 
-    const onSubmit = data => {
-        console.log(data)
+    const onSubmit = useCallback(
+        async event => {
+            event.preventDefault();
+            const {email, password} = event.target.elements;
+            try {
+                await app
+                    .auth()
+                    .signInWithEmailAndPassword(email.value, password.value);
+                history.push("/")
+            } catch (error) {
+                alert(error)
+            }
+        }, [history]
+    );
+
+    const {currentUser} = useContext(AuthContext);
+
+    if (currentUser) {
+        return <Redirect to={"/"}/>
     }
 
     return (

@@ -1,16 +1,26 @@
-import React, {useState} from "react";
+import React, {useCallback, useState} from "react";
 import Navigation from "./Navigation";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
+import app from "./firebase/Firebase";
 
-function Register() {
+function Register({history}) {
     const {register, handleSubmit, errors, formState, watch} = useForm();
     const [matchPass, setMatchPass] = useState("");
 
-    const onSubmit = data => {
-        console.log(data)
-    }
+    const onSubmit = useCallback(async event => {
+        const {email, password} = event.target.elements;
+        try {
+            await app
+                .auth()
+                .createUserWithEmailAndPassword(email.value, password.value);
+            history.push("/")
+        } catch (error) {
+            alert(error);
+        }
+    }, [history]);
+
 
     return (
         <>

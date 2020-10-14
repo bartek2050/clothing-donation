@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import app from "./Firebase";
+import app from "./FirebaseConfig"
 
 export const AuthContext = React.createContext();
 
@@ -11,6 +11,7 @@ export const AuthProvider = ({ children }) => {
         app.auth().onAuthStateChanged((user) => {
             setCurrentUser(user)
             setPending(false)
+            console.log(currentUser)
         });
     }, []);
 
@@ -19,12 +20,10 @@ export const AuthProvider = ({ children }) => {
     }
 
     return (
-        <AuthContext.Provider
-            value={{
-                currentUser
-            }}
-        >
+        <AuthContext.Provider value={{currentUser}}>
             {children}
         </AuthContext.Provider>
     );
 };
+
+export default AuthProvider;

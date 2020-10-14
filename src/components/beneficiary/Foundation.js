@@ -24,7 +24,7 @@ function Foundation() {
                         Fundacja “Dla dzieci”
                     </p>
                     <p className={"aboutFoundation__text-info"}>
-                        Cel i misja: Pomoc dzieciom z ubogich rodzin.                    </p>
+                        Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
                 </div>
                 <div className={"aboutFoundation__needs"}>
                     <p>ubrania, meble, zabawki</p>

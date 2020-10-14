@@ -8,31 +8,10 @@ import app from "./config/FirebaseConfig"
 function Login() {
     const {register, handleSubmit, errors, formState} = useForm();
 
-    // const onSubmit = useCallback(
-    //     async event => {
-    //         event.preventDefault();
-    //         const {email, password} = event.target.elements;
-    //         try {
-    //             await
-    //                 .auth()
-    //                 .signInWithEmailAndPassword(email.value, password.value);
-    //             history.push("/")
-    //         } catch (error) {
-    //             alert(error)
-    //         }
-    //     }, [history]
-    // );
-
-    // const {currentUser} = useContext(AuthContext);
-    //
-    // if (currentUser) {
-    //     return <Redirect to={"/"}/>
-    // }
-
     const onSubmit = (data, e) => {
         const {email, password} = data;
         app.auth().signInWithEmailAndPassword(email, password)
-            .catch (error => console.log(error))
+            .catch (error => alert(error))
             .then (() => <Redirect to={"/"}/>)
     }
 

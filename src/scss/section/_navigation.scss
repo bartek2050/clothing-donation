@@ -14,6 +14,7 @@
             text-decoration: none;
             padding: 10px 25px;
             color: $login-font;
+            font-size: 0.875em;
         }
 
         .register {
@@ -21,6 +22,25 @@
             color: $login-font;
             border: 0.75px solid $gold-element;
             padding: 10px;
+            font-size: 0.875em;
+
+            &:hover {
+                background-color: $gold-element;
+            }
+        }
+
+        .logout {
+            text-decoration: none;
+            color: $login-font;
+            font-size: 0.875em;
+            background-color: transparent;
+            cursor: pointer;
+            border: 0.75px solid transparent;
+            padding: 10px;
+
+            &:hover {
+                border: 0.75px solid $main-font;
+            }
         }
     }
 
@@ -38,11 +58,11 @@
             padding: 10px;
             cursor: pointer;
             margin-left: 35px;
-        }
 
-        .menuElement:hover {
-            border: 0.75px solid $main-font;
-            padding: 10px;
+            &:hover {
+                border: 0.75px solid $main-font;
+                padding: 10px;
+            }
         }
     }
 }

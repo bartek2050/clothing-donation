@@ -1,17 +1,32 @@
-import {Link as RouteLink} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import {Link as ScrollLink} from "react-scroll";
-import React from "react";
+import React, {useContext} from "react";
+import {AuthContext} from "./config/Auth";
+import app from "./config/FirebaseConfig"
 
 function Navigation () {
 
+    const history = useHistory();
+    const logOut = e => {
+        e.preventDefault();
+        if(currentUser){
+            app.auth().signOut().then(()=> history.push('/wylogowano'))
+        }
+    }
+
+    const {currentUser} = useContext(AuthContext)
+    console.log(currentUser)
+    const presentUser = currentUser ? <p>ZALOGOWANY</p> : null;
     return (
     <section className={"navigationMain"}>
         <div className={"navigationMain__login"}>
-            <RouteLink to={"/logowanie"} className={"login"}>Zaloguj</RouteLink>
-            <RouteLink to={"/rejestracja"} className={"register"}>Załóż konto</RouteLink>
+            {presentUser}
+            <button onClick={(e) => logOut(e)}>WYLOGUJ</button>
+            <Link to={"/logowanie"} className={"login"}>Zaloguj</Link>
+            <Link to={"/rejestracja"} className={"register"}>Załóż konto</Link>
         </div>
         <div className={"navigationMain__navigation"}>
-            <RouteLink to={"/"} className={"menuElement"}>Start</RouteLink>
+            <Link to={"/"} className={"menuElement"}>Start</Link>
             <ScrollLink
                 to={"fourSteps"}
                 className={"menuElement"}

@@ -42,6 +42,20 @@
                 border: 0.75px solid $main-font;
             }
         }
+
+        .helloEmail {
+            color: $login-font;
+            font-size: 0.875em;
+            padding: 10px 2px;
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            background-color: #34a71a;
+            margin: 12px 10px 10px 1px;
+            border-radius: 90px;
+        }
     }
 
     .navigationMain__navigation {

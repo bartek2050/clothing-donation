@@ -1,8 +1,7 @@
 Project for people who wants to return their old clothes for needy.
 
-Project created using **React App**. Forms and validation is created in **React Hook Form**. Database for login function is based on **Firebase**.
-Material UI, API.
+Project created using **React App**. Forms and validation is created in **React Hook Form** data send to server using a **POST** request. Database for login function is based on **Firebase**.
 
 Build project You can see here -> http://clothing-donation.bconnect.net.pl/
 
-![preview](/public/People.jpg)
+![preview](/public/screen.png)

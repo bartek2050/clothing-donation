@@ -2,18 +2,19 @@ import React, {useState} from "react";
 import Navigation from "./Navigation";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import app from "./config/FirebaseConfig"
 
 function Register() {
     const {register, handleSubmit, errors, formState, watch} = useForm();
     const [matchPass, setMatchPass] = useState("");
+    const history = useHistory();
 
     const onSubmit = (data, e) => {
         const {email, password} = data;
         app.auth().createUserWithEmailAndPassword(email, password)
-            .catch (error => console.log(error))
-            .then (() => console.log("sukces"))
+            .catch (error => alert(error))
+            .then (() => history.push("/"))
     }
 
     return (

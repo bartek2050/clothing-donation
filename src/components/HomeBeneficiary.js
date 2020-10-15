@@ -12,13 +12,22 @@ function HomeBeneficiary() {
             <Decoration header={`Komu pomagamy`}/>
             <div className={"homeBeneficiary__navigation"}>
                 <button onClick={() => setSection(0)}
-                        className={section === 0 ? "homeBeneficiary__navigation-element active" : "homeBeneficiary__navigation-element"}>Fundacjom
+                        className={section === 0
+                            ? "homeBeneficiary__navigation-element active"
+                            : "homeBeneficiary__navigation-element"}>
+                    Fundacjom
                 </button>
                 <button onClick={() => setSection(1)} activeclassname={"homeBeneficiary__active"}
-                        className={section === 1 ? "homeBeneficiary__navigation-element active" : "homeBeneficiary__navigation-element"}>Organizacjom pozarządowym
+                        className={section === 1
+                            ? "homeBeneficiary__navigation-element active"
+                            : "homeBeneficiary__navigation-element"}>
+                    Organizacjom pozarządowym
                 </button>
                 <button onClick={() => setSection(2)} activeclassname={"homeBeneficiary__active"}
-                        className={section === 2 ? "homeBeneficiary__navigation-element active" : "homeBeneficiary__navigation-element"}>Lokalnym zbiórkom
+                        className={section === 2
+                            ? "homeBeneficiary__navigation-element active"
+                            : "homeBeneficiary__navigation-element"}>
+                    Lokalnym zbiórkom
                 </button>
             </div>
             <p className={"homeBeneficiary__text"}>

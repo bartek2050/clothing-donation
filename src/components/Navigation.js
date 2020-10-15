@@ -19,9 +19,11 @@ function Navigation() {
         if (currentUser) {
             return (
                 <>
-                    <p>Cześć {email}</p>
+                    <p className={"helloEmail"}>Cześć {email}</p>
+                    <span className={"dot"}></span>
                     <Link to={"/"} className={"register"}>Oddaj rzeczy</Link>
-                    <button className={"logout"} onClick={(e) => logOut(e)}>Wyloguj</button>
+                    <button className={"logout"}
+                            onClick={(e) => logOut(e)}>Wyloguj</button>
                 </>
             )
         }

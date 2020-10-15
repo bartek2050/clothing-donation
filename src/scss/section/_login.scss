@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 120px;
 
     .loginBox {
         margin-top: 50px;
@@ -54,5 +54,10 @@
                 border: 0.75px solid $main-font;
             }
         }
+    }
+    .login__logged-button {
+        @include button;
+        border: 0.75px solid $main-font;
+        margin-top: 30px;
     }
 }

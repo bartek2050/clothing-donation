@@ -1,5 +1,6 @@
 .aboutLocal__section {
     @include aboutSection;
+    margin: 20px 180px;
 }
 
 .aboutLocal__text-name {
@@ -12,4 +13,13 @@
 
 .aboutLocal__needs {
     @include aboutNeeds;
+}
+
+//MEDIA
+
+@media (max-width: 800px) {
+
+    .aboutLocal__section {
+        margin: 20px;
+    }
 }

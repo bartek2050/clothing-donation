@@ -127,3 +127,32 @@
         }
     }
 }
+
+//MEDIA
+
+@media (max-width: 800px) {
+    .contact__section {
+        .contact__section-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            .contact__section-main {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .contact__section-footer {
+        padding: 0 10px;
+        .contact__section-empty {
+            width: 0;
+        }
+
+        .contact__section-copyrights {
+            width: 60%;
+        }
+
+        .contact__sections-socials {
+            width: 40%;
+            padding-right: 0;
+        }
+    }
+}

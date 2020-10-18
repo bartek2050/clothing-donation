@@ -1,5 +1,6 @@
 .aboutNgo__section {
     @include aboutSection;
+    margin: 20px 180px;
 }
 
 .aboutNgo__text-name {
@@ -12,4 +13,13 @@
 
 .aboutNgo__needs {
     @include aboutNeeds;
+}
+
+//MEDIA
+
+@media (max-width: 800px) {
+
+    .aboutNgo__section {
+        margin: 20px;
+    }
 }

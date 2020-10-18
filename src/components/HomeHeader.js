@@ -16,7 +16,9 @@ function HomeHeader() {
                      }}
                 />
                 <div className={"homeSection__about"}>
-                    <div className={"homeSection__navigation"}><Navigation/></div>
+                    <div className={"homeSection__navigation"}>
+                        <Navigation/>
+                    </div>
                     <Decoration>
                         <h3 className={"decorHeader"}>Zacznij pomagać!<br/>
                             Oddaj niechciane rzeczy w zaufane ręce</h3>

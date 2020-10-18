@@ -27,3 +27,25 @@
         }
     }
 }
+
+//MEDIA
+
+@media (max-width: 800px) {
+
+    .homeSection {
+        height: 100%;
+
+        .homeSection__image {
+            display: none;
+        }
+
+        .homeSection__about {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .homeSection__navigation {
+            margin-bottom: 60px;
+        }
+    }
+}

@@ -19,7 +19,7 @@ function Navigation() {
         if (currentUser) {
             return (
                 <>
-                    <p className={"helloEmail"}>Cześć {email}</p>
+                    <p className={"helloEmail"}>Cześć, {email}</p>
                     <span className={"dot"}></span>
                     <Link to={"/"} className={"register"}>Oddaj rzeczy</Link>
                     <button className={"logout"}

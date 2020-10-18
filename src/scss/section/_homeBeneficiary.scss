@@ -3,18 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 10px;
 
     .homeBeneficiary__navigation-element {
-        background: #fff;
-        box-sizing: border-box;
-        font-family: $font-base;
-        font-weight: 300;
+        @include button;
+        padding: 10px;
         font-size: 1.5rem;
-        padding: 13px;
-        margin: 11px 7px;
-        cursor: pointer;
-        border: 0.75px solid transparent;
 
         &:hover {
             border: 0.75px solid $main-font;
@@ -22,7 +16,6 @@
 
         &:focus {
             outline: none;
-            border: 0.75px solid $main-font;
         }
     }
 
@@ -30,15 +23,32 @@
         border: 0.75px solid $main-font;
     }
 
-    .homeBeneficiary__navigation-element:active {
-        border: 0.75px solid $main-font;
-    }
-
     .homeBeneficiary__text {
         padding: 70px 0;
-        font-size: 1.375em;
+        font-size: 1em;
         font-weight: 300;
-        width: 650px;
+        width: auto;
         text-align: center;
+    }
+}
+
+//MEDIA
+
+@media (max-width: 800px) {
+    .homeBeneficiary__section {
+
+        .homeBeneficiary__navigation {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+
+            .homeBeneficiary__navigation-element {
+                font-size: 1rem;
+            }
+        }
+
+        .homeBeneficiary__text {
+            padding: 20px;
+        }
     }
 }

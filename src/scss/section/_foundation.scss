@@ -1,5 +1,6 @@
 .aboutFoundation__section {
     @include aboutSection;
+    margin: 20px 180px;
 }
 
 .aboutFoundation__text-name {
@@ -12,4 +13,13 @@
 
 .aboutFoundation__needs {
     @include aboutNeeds;
+}
+
+//MEDIA
+
+@media (max-width: 800px) {
+
+    .aboutFoundation__section {
+        margin: 20px;
+    }
 }

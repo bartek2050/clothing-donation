@@ -9,3 +9,12 @@
     margin: 11px 7px;
     cursor: pointer;
 }
+
+//MEDIA
+
+@media (max-width: 800px) {
+    .button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}

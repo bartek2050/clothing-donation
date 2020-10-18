@@ -3,7 +3,6 @@
     justify-content: space-between;
     color: $main-font;
     border-bottom: 1px solid #707070;
-    margin: 20px 180px;
 }
 
 @mixin aboutTextName {
@@ -26,7 +25,7 @@
     text-align: end;
 }
 
-@mixin Message($color)  {
+@mixin Message($color) {
     font-size: 0.8em;
     font-weight: 600;
     padding-top: 5px;

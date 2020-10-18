@@ -45,6 +45,20 @@
     display: flex;
     justify-content: center;
     margin-top: 35px;
-    margin-bottom: 70px;
+    margin-bottom: 35px;
+}
+
+//MEDIA
+
+@media (max-width: 800px) {
+
+    .fourSteps__section {
+        flex-direction: column;
+        justify-content: center;
+
+        .fourSteps__box {
+            padding: 20px 0;
+        }
+    }
 }
 

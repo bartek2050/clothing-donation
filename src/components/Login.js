@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import Navigation from "./Navigation";
+import NavigationSection from "./NavigationSection";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
 import {Link, useHistory} from "react-router-dom";
@@ -23,7 +23,7 @@ function Login() {
         if (currentUser) {
             return (
                 <>
-                    <Navigation/>
+                    <NavigationSection/>
                     <div className={"loginSection"}>
                     <Decoration header={`Jesteś już zalogowany`}/>
                     <Link to={"/"} className={"login__logged-button"}>Strona główna</Link>
@@ -33,7 +33,7 @@ function Login() {
         }
         return (
             <>
-                <Navigation/>
+                <NavigationSection/>
                 <section className={"loginSection"}>
                     <Decoration header={`Zaloguj się`}/>
                     <div className={"loginBox"}>

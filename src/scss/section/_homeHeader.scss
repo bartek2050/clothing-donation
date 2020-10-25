@@ -21,16 +21,12 @@
         display: flex;
         justify-content: center;
         margin-top: 40px;
-
-        .cta__button {
-            margin-left: 15px;
-        }
     }
 }
 
 //MEDIA
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 
     .homeSection {
         height: 100%;

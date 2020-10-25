@@ -1,10 +1,5 @@
-.navigationMain {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    margin-right: 25px;
-
-    .navigationMain__login {
+.navigationMain__login {
+        margin-top: 25px;
         display: flex;
         text-decoration: none;
         font-size: 0.875em;
@@ -23,6 +18,9 @@
             border: 0.75px solid $gold-element;
             padding: 10px;
             font-size: 0.875em;
+            align-items: center;
+            display: flex;
+            margin-right: 25px;
 
             &:hover {
                 background-color: $gold-element;
@@ -43,6 +41,21 @@
             }
         }
 
+    }
+
+.currentUser__section {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+
+    .currentUser__buttons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .currentUser__hello {
+        display: flex;
+
         .helloEmail {
             color: $login-font;
             font-size: 0.875em;
@@ -57,35 +70,17 @@
             border-radius: 90px;
         }
     }
+}
 
-    .navigationMain__navigation {
-        margin-top: 15px;
-        display: flex;
-        justify-content: flex-end;
+@media (max-width: 1200px) {
 
-        .menuElement {
-            text-decoration: none;
-            color: $main-font;
-            font-size: 1.125em;
-            font-weight: 300;
-            border: 0.75px solid transparent;
-            padding: 10px;
-            cursor: pointer;
-            margin-left: 35px;
+    .navigationMain__login {
+        margin-top: 5px;
 
-            &:hover {
-                border: 0.75px solid $main-font;
-                padding: 10px;
-            }
+        .currentUser__section {
+            flex-direction: column;
         }
     }
 }
 
-//MEDIA
 
-.navigationMain {
-    .navigationMain__login {
-
-    }
-
-}

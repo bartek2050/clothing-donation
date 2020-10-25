@@ -1,0 +1,30 @@
+.burgerWrapper {
+
+    .burger {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        top: 15px;
+        left: 20px;
+        z-index: 10;
+        display: none;
+        margin-top: 10px;
+        cursor: pointer;
+
+        @media (max-width: 1200px) {
+            display: flex;
+            justify-content: space-around;
+            flex-flow: column nowrap;
+        }
+
+        div {
+            width: 2rem;
+            height: 0.25rem;
+            color: $main-font;
+            border-radius: 10px;
+            transform-origin: 1px;
+            transition: all 0.3s linear;
+            box-shadow: 2px 2px 2px #00000029;
+        }
+    }
+}

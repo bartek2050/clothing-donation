@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import Navigation from "./Navigation";
+import NavigationSection from "./NavigationSection";
 import Decoration from "./elements/Decoration";
 import {useForm} from "react-hook-form";
 import {Link, useHistory} from "react-router-dom";
@@ -19,7 +19,7 @@ function Register() {
 
     return (
         <>
-            <Navigation/>
+            <NavigationSection/>
             <section className={"registerSection"}>
                 <Decoration header={`Załóż konto`}/>
                 <div className={"registerBox"}>

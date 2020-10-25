@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import Button from "./elements/Button";
-import Navigation from "./Navigation";
+import NavigationSection from "./NavigationSection";
 import Decoration from "./elements/Decoration";
 
 function HomeHeader() {
@@ -17,7 +17,7 @@ function HomeHeader() {
                 />
                 <div className={"homeSection__about"}>
                     <div className={"homeSection__navigation"}>
-                        <Navigation/>
+                        <NavigationSection/>
                     </div>
                     <Decoration>
                         <h3 className={"decorHeader"}>Zacznij pomagać!<br/>
